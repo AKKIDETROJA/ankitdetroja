@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Nunito', sans-serif;
+            position: relative;
+        }
+        
+        .progress-bar {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 60px;
+            height: 60px;
+        }
+        
+        .progress-bar canvas {
+            display: block;
+        }
+        
+        .blink {
+            animation: blinker 1s linear infinite;
+        }
+        
+        @keyframes blinker {
+            50% {
+                opacity: 0;
+            }
+        }
+        
+        .title {
+            font-weight: bold;
+            font-size: 32px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="logo.png" alt="Logo"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Support</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Projects</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-md-12">
+                <h1 class="title">Welcome to our Website</h1>
+                <h3>Discover <span class="blink" style="color: red;">Exciting Opportunities</span></h3>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-md-12">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/4jKkT3d8gdI?list=RD4jKkT3d8gdI&start_radio=1" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-md-12">
+                <h3>Customer Reviews</h3>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="https://media.licdn.com/dms/image/C4E03AQEwrnMHkK7Rtg/profile-displayphoto-shrink_800_800/0/1635175000675?e=2147483647&v=beta&t=IhAWt8DMwPSc5Cyxq9cEsQj-Y_9_5xQozZ2YxlqrpnI" class="card-img-top" alt="Customer 1">
+                            <div class="card-body">
+                                <h5 class="card-title">John Doe</h5>
+                                <p class="card-text">john@example.com</p>
+                                <p class="card-text">Rating: 4/5</p>
+                                <p class="card-text">"Great service! Highly recommended."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="https://media.licdn.com/dms/image/C4E03AQEwrnMHkK7Rtg/profile-displayphoto-shrink_800_800/0/1635175000675?e=2147483647&v=beta&t=IhAWt8DMwPSc5Cyxq9cEsQj-Y_9_5xQozZ2YxlqrpnI" class="card-img-top" alt="Customer 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Jane Smith</h5>
+                                <p class="card-text">jane@example.com</p>
+                                <p class="card-text">Rating: 5/5</p>
+                                <p class="card-text">"Excellent products and fast delivery."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="https://media.licdn.com/dms/image/C4E03AQEwrnMHkK7Rtg/profile-displayphoto-shrink_800_800/0/1635175000675?e=2147483647&v=beta&t=IhAWt8DMwPSc5Cyxq9cEsQj-Y_9_5xQozZ2YxlqrpnI" class="card-img-top" alt="Customer 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Mike Johnson</h5>
+                                <p class="card-text">mike@example.com</p>
+                                <p class="card-text">Rating: 4.5/5</p>
+                                <p class="card-text">"Friendly and helpful customer support."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-md-6">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1234.5678!2d-1.2345678!3d12.3456789!4m5!6m4!1sABC+Street%2C+City%2C+Country!2sCompany+Name!3d12.3456789!4d-1.2345678!5e0!3m2!1sen!2sus!4v1234567890123" width="100%" height="300" frameborder="0"
+                    style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+            <div class="col-md-6">
+                <h3>Contact Us</h3>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" rows="4" placeholder="Message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="progress-bar"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script>
+        window.onscroll = function() {
+            myFunction()
+        };
+
+        function myFunction() {
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll / height) * 100;
+            document.querySelector(".progress-bar").innerHTML = `<div class="circular-progress-bar" data-progress="${scrolled}"><span class="progress-value">${Math.round(scrolled)}%</span></div>`;
+        }
+    </script>
+</body>
+
+</html>
